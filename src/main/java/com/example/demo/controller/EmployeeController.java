@@ -35,6 +35,7 @@ public class EmployeeController {
     	super();
     	this.employeeService = employeeService;
     	this.employeeRepo = employeeRepo;
+
     }
 
    // private final MessageSource messageSource;
@@ -80,6 +81,7 @@ public class EmployeeController {
     @GetMapping("/findAll")
     public List<Employee> findAll() {
         List<Employee> emp = employeeRepo.findAll();
+        System.out.println();
         return emp;
     }
 
