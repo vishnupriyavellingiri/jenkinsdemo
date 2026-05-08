@@ -10,6 +10,7 @@ public class MessageSourceConfig {
 
     @Bean
     public MessageSource messageSource() {
+        System.out.println();
         ReloadableResourceBundleMessageSource messageSource =
                 new ReloadableResourceBundleMessageSource();
         messageSource.setBasename("classpath:messages");
